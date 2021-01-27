@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
  *
  * @deprecated Do not use; exists only for compile time compatibility
  */
-@Deprecated(forRemoval = true)
+@Deprecated
 public class LegacyText3ComponentSerializer implements ComponentSerializer<Component, Component, net.kyori.text.Component> {
 
   private static final LegacyText3ComponentSerializer INSTANCE = new LegacyText3ComponentSerializer();
@@ -32,7 +32,7 @@ public class LegacyText3ComponentSerializer implements ComponentSerializer<Compo
 
   private static UnsupportedOperationException uoe() {
     return new UnsupportedOperationException(
-            "A caller attempted to convert to or from Kyori Adventure and Kyori Text." +
+            "A caller attempted to convert to or from Kyori Adventure and Kyori Text. " +
                     "Such caller should not be using Kyori Text to begin with, considering it is deprecated and unsupported.");
   }
 }
