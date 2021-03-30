@@ -3,7 +3,6 @@ package net.kyori.adventure.text.serializer.legacytext3;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.ComponentSerializer;
 import org.checkerframework.checker.nullness.qual.NonNull;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * Kyori Adventure to Kyori Text serializer
@@ -24,9 +23,8 @@ public class LegacyText3ComponentSerializer implements ComponentSerializer<Compo
     throw uoe();
   }
 
-  @NotNull
   @Override
-  public net.kyori.text.Component serialize(@NonNull Component component) {
+  public net.kyori.text.@NonNull Component serialize(@NonNull Component component) {
     throw uoe();
   }
 
