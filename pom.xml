@@ -12,6 +12,10 @@
 	<artifactId>adventure-text-serializer-legacy-text3</artifactId>
 	<version>1.1.1-SNAPSHOT</version>
 
+	<scm>
+		<developerConnection>scm:git:https://github.com/SolarMC-Dev/EmptyAdventureText3Serializer.git</developerConnection>
+	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>net.kyori</groupId>
